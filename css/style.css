@@ -170,7 +170,7 @@ p {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.secao-cadastro input:focus {
+.secao-cadastro input:focus-visible {
     outline: 3px solid var(--cor-foco);
     outline-offset: 1px;
     border-color: var(--cor-primaria);
@@ -238,9 +238,21 @@ p {
     transform: translateY(-2px);
 }
 
-.secao-cadastro button:focus {
-    outline: 3px solid var(--cor-foco);
+.secao-cadastro button:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
     outline-offset: 3px;
+}
+
+.secao-cadastro button:active:not(:disabled) {
+    background-color: var(--cor-primaria-escura);
+    transform: translateY(0);
+}
+
+.secao-cadastro button:disabled {
+    background-color: var(--cor-borda);
+    color: var(--cor-texto);
+    cursor: not-allowed;
+    opacity: 1;
 }
 
 .rodape-principal {

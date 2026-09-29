@@ -19,7 +19,7 @@ export function templateHome() {
             data-bs-toggle="modal" data-bs-target="#modal-notificacao">
             Ver aviso importante
         </button>
-        <div class="modal fade" id="modal-notificacao" tabindex="-1"
+        <div class="modal fade" id="modal-notificacao" role="dialog" tabindex="-1"
             aria-labelledby="titulo-modal-notificacao" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modal-conteudo">
@@ -112,7 +112,7 @@ export function templateCadastro() {
             <div id="mensagem-feedback" aria-live="polite"></div>
 
             <!-- Modal Nativo (<dialog>) -->
-            <div class="modal fade" id="modal-sucesso" tabindex="-1"
+            <div class="modal fade" id="modal-sucesso" role="dialog" tabindex="-1"
                 aria-labelledby="titulo-modal-sucesso" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content modal-conteudo">

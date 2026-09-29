@@ -41,9 +41,11 @@ details[open] .link-dropdown {
     background-color: var(--cor-primaria);
 }
 
-.menu-navegacao a:focus,
-.rodape-principal a:focus {
-    outline: 3px solid var(--cor-foco);
+.menu-navegacao a:focus-visible,
+.link-dropdown:focus-visible,
+.menu-hamburguer:focus-visible,
+.rodape-principal a:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
     outline-offset: 2px;
 }
 
@@ -199,6 +201,28 @@ details[open] .link-dropdown {
 .botao-aviso:hover {
     background-color: var(--cor-hover);
     border-color: var(--cor-hover);
+}
+
+.modal-conteudo :focus-visible,
+.botao-aviso:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 3px;
+}
+
+.modal-conteudo .btn-primary:active:not(:disabled),
+.botao-aviso:active:not(:disabled) {
+    background-color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria-escura);
+    transform: translateY(0);
+}
+
+.modal-conteudo .btn-primary:disabled,
+.botao-aviso:disabled {
+    background-color: var(--cor-borda);
+    border-color: var(--cor-borda);
+    color: var(--cor-texto);
+    cursor: not-allowed;
+    opacity: 1;
 }
 
 .modal-fallback-aberta {
