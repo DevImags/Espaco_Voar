@@ -1,0 +1,34 @@
+:root {
+    --cor-fundo: #F1F8FC;
+    --cor-fundo-secundario: #FFFFFF;
+    --cor-texto: #263746;
+    --cor-texto-secundario: #536777;
+    --cor-primaria: #0067B9;
+    --cor-primaria-escura: #004A87;
+    --cor-secundaria: #FFC928;
+    --cor-destaque: #FF9E2C;
+    --cor-hover: #005394;
+    --cor-foco: #5CC8F2;
+    --cor-borda: #C8DCE8;
+    --cor-sucesso: #2E8B57;
+    --cor-erro: #C62828;
+    --cor-branco: #FFFFFF;
+    --fonte-titulo: Arial, Helvetica, sans-serif;
+    --fonte-texto: Arial, Helvetica, sans-serif;
+    --tamanho-h1: 40px;
+    --tamanho-h2: 32px;
+    --tamanho-h3: 24px;
+    --tamanho-texto: 16px;
+    --tamanho-texto-pequeno: 14px;
+    --peso-normal: 400;
+    --peso-medio: 500;
+    --peso-semibold: 600;
+    --peso-negrito: 700;
+    --espaco-xp: 8px;
+    --espaco-p: 16px;
+    --espaco-md: 24px;
+    --espaco-lg: 32px;
+    --espaco-xg: 48px;
+    --raio-borda: 10px;
+    --sombra-card: 0 4px 12px rgba(0, 74, 135, 0.12);
+}
