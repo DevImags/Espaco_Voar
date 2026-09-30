@@ -8,6 +8,10 @@ Como o projeto usa módulos JavaScript, abra-o por um servidor local, não diret
 
 O Bootstrap 5.3.3 e as fontes externas são carregados por CDN; conexão com a internet é necessária para carregar esses recursos. Os modais têm um fallback local quando o JavaScript do Bootstrap não está disponível.
 
+## Build de produção
+
+O projeto usa Vite para agrupar e minificar os módulos JavaScript e os arquivos CSS. Execute `npm install` uma vez para instalar as dependências e depois `npm run build` para gerar a pasta `dist/`. Para testar a saída compilada localmente, use `npm run preview`.
+
 ## Estrutura
 
 - `index.html`, `projetos.html` e `cadastro.html`: páginas e pontos de entrada.
