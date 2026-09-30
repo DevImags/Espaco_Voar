@@ -1,8 +1,10 @@
+import imagemEspacoVoar from '../assets/img/espaco_voar.png';
+
 export function templateHome() {
     return `
         <section class="secao-principal secao-padrao">
             <h2 class="titulo-secao">Sobre a Nossa Instituição</h2>
-            <img src="assets/img/espaco_voar.png"
+            <img src="${imagemEspacoVoar}"
                 alt="Grupo de crianças, adolescentes e adultos reunidos em uma atividade de aprendizagem no Espaço Voar"
                 width="500">
             <p>O Espaço Voar é uma organização social que tem como objetivo levar conhecimento às crianças, adolescentes
