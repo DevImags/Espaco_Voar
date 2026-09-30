@@ -6,7 +6,7 @@ export function templateHome() {
             <h2 class="titulo-secao">Sobre a Nossa Instituição</h2>
             <img src="${imagemEspacoVoar}"
                 alt="Grupo de crianças, adolescentes e adultos reunidos em uma atividade de aprendizagem no Espaço Voar"
-                width="500">
+                width="500" fetchpriority="high">
             <p>O Espaço Voar é uma organização social que tem como objetivo levar conhecimento às crianças, adolescentes
                 e adultos, tanto no básico, quanto no conhecimento técnico, preparando os mesmos para que tenham mais
                 opções com o que eles aprenderam.</p>
