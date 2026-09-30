@@ -1,4 +1,4 @@
-import { abrirModal, fecharModal } from './modais.js';
+import { abrirModal, fecharModal, manterFocoNoModal } from './modais.js';
 
 export function iniciarComponentes() {
 	document.addEventListener('click', (evento) => {
@@ -64,11 +64,15 @@ export function iniciarComponentes() {
 	});
 
 	document.addEventListener('keydown', (evento) => {
-		if (evento.key !== 'Escape') {
+		const modalAberto = document.querySelector('.modal-fallback-aberta');
+		if (!modalAberto) {
 			return;
 		}
 
-		const modalAberto = document.querySelector('.modal-fallback-aberta');
-		if (modalAberto) fecharModal(modalAberto);
+		if (evento.key === 'Escape') {
+			fecharModal(modalAberto);
+		} else {
+			manterFocoNoModal(evento, modalAberto);
+		}
 	});
 }
